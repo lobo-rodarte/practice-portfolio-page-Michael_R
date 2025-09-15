@@ -1,0 +1,82 @@
+<!-- 
+Step 1: Plan the Portfolio Page 
+Before coding, students will plan the structure of their portfolio page. The page should include: 
+1. A Header: Contains the name and a brief tagline. 
+2. An "About Me" Section: Includes a paragraph about themselves. 
+3. A Skills Table: Displays a list of skills or tools with proficiency levels in a table format. 
+4. A Contact Form: Allows visitors to send a message, including fields for the visitor's name, email, and message. 
+Step 2: Create the HTML Structure 
+1. Use semantic tags like <header>, <section>, and <footer> to organize the page. 
+2. Create a table with appropriate headers (<th>), rows (<tr>), and cells (<td>). 
+3. Add a form with labels, input fields, and a submit button. The form should use: 
+○ type="text" for the name field. 
+○ type="email" for the email field. 
+○ <textarea> for the message field. 
+4. Use other relevant tags, such as <h1>, <p>, <ul>, or <img>, to enhance the design. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Premier Developer Webpage</title>
+</head>
+<body>
+    <section>
+        <div>
+            <img src="sigma-premier-logo.png" alt="Wolf wearing a crown" width="325" height="100"> 
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+            <header>Hello and thank you for visiting our site!<br>Here at Sigma Premier we work with small businesses to build their digital presence while providing superb customer service!</header>
+        </div>
+        <h3>About Me</h3>
+        <p>The company owner Mike Rodarte is a Air Force veteran with a background in Logistics, Cybersecurity, IT Management, and IT Project Management.<br>While managing multiple projects focusing on software and product development, he felt that he was in the wrong area to let his creativity thrive so he decided to pursue a career in software development.<br>As an aspiring front end developer he will use his love for art, creativity, and knowledge of search engine optimization (SEO) to compose a digital symphony that will reel potential customers to your website.</p>
+    </section>
+    <section>
+        <h3>Applicable Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Business Accumen</li>
+                <li>Software Development</li>
+                <li>Creative Thinking</li>
+            </ul>
+    </section>
+    <section>
+        <div>
+            <h3>Services Provided</h3>
+            <tr>
+                <th>Service</th>
+                <th>POC</th>
+                <th>Business Name</th>
+            </tr>
+            <tr>
+                <td>Website Build</td>
+                <td>Darth Vader</td>
+                <td>Galactic Empire</td>
+            </tr>
+            <tr>
+                <td>Website Overhaul</td>
+                <td>Kylo Ren</td>
+                <td>First Order</td>
+            </tr>
+        </div>
+    </section>
+    <footer>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+</body>
+</html>
+
