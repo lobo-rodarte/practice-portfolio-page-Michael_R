@@ -49,31 +49,33 @@ Step 2: Create the HTML Structure
     <section>
         <div>
             <h3>Services Provided</h3>
-            <tr>
-                <th>Service</th>
-                <th>POC</th>
-                <th>Business Name</th>
-            </tr>
-            <tr>
-                <td>Website Build</td>
-                <td>Darth Vader</td>
-                <td>Galactic Empire</td>
-            </tr>
-            <tr>
-                <td>Website Overhaul</td>
-                <td>Kylo Ren</td>
-                <td>First Order</td>
-            </tr>
-        </div>
+            <table border="2">
+                <tr>
+                    <th>Service</th>
+                    <th>POC</th>
+                    <th>Business Name</th>
+                </tr>
+                <tr>
+                    <td>Website Build</td>
+                    <td>Darth Vader</td>
+                    <td>Galactic Empire</td>
+                </tr>
+                <tr>
+                    <td>Website Overhaul</td>
+                    <td>Kylo Ren</td>
+                    <td>First Order</td>
+                </tr>
+            </table>
+        </div><br>
     </section>
     <footer>
         <form action="/submit" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name"><br>
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <input type="text" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
             <button type="submit">Submit</button>
         </form>
     </footer>
