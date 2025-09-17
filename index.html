@@ -12,7 +12,7 @@ Step 2: Create the HTML Structure
 ○ type="text" for the name field. 
 ○ type="email" for the email field. 
 ○ <textarea> for the message field. 
-4. Use other relevant tags, such as <h1>, <p>, <ul>, or <img>, to enhance the design. 
+4. Use other relevant tags, such as <h1>, <p>, <ul>, or <img>, to enhance the design. more info to commmit
 -->
 
 <!DOCTYPE html>
@@ -21,39 +21,53 @@ Step 2: Create the HTML Structure
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sigma Premier Developer Webpage</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <section>
         <div>
             <img src="sigma-premier-logo.png" alt="Wolf wearing a crown" width="325" height="100"> 
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+            <ul id="navigation">
+                <li class="nav-elements">Home</li>
+                <li class="nav-elements">About Us</li>
+                <li class="nav-elements">Services</li>
+                <li class="nav-elements">Contact Us</li>
             </ul>
-            <header>Hello and thank you for visiting our site!<br>Here at Sigma Premier we work with small businesses to build their digital presence while providing superb customer service!</header>
         </div>
-        <h3>About Me</h3>
-        <p>The company owner Mike Rodarte is a Air Force veteran with a background in Logistics, Cybersecurity, IT Management, and IT Project Management.<br>While managing multiple projects focusing on software and product development, he felt that he was in the wrong area to let his creativity thrive so he decided to pursue a career in software development.<br>As an aspiring front end developer he will use his love for art, creativity, and knowledge of search engine optimization (SEO) to compose a digital symphony that will reel potential customers to your website.</p>
-    </section>
     <section>
-        <h3>Applicable Skills</h3>
-            <ul>
-                <li>Problem Solving</li>
-                <li>Business Accumen</li>
-                <li>Software Development</li>
-                <li>Creative Thinking</li>
-            </ul>
+        <div id="hero-page">
+            <h1>Hello and thank you for visiting our site!</h1>
+            <p>Here at Sigma Premier we work with small businesses to build their digital presence while providing superb customer service!</p>
+        </div>
     </section>
     <section>
         <div>
-            <h3>Services Provided</h3>
-            <table border="2">
+            <h3 class="main-heading">About Me</h3>
+            <p>The company owner Mike Rodarte is a Air Force veteran with a background in Logistics, Cybersecurity, IT Management, and IT Project Management. While managing multiple projects focusing on software and product development, he felt that he was in the wrong area to let his creativity thrive so he decided to pursue a career in software development. As an aspiring front end developer he will use his love for art, creativity, and knowledge of search engine optimization (SEO) to compose a digital symphony that will reel potential customers to your website.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h3 class="main-heading">Applicable Skills</h3>
+            <ol>
+                <li>Problem Solving</li>
+                <li>Business Accumen</li>
+                <li>Creative Thinking</li>
+                <li>Software Development</li>
+                    <ul>
+                        <li class="subskills">HTML</li>
+                        <li class="subskills">CSS</li>
+                        <li class="subskills">JavaScript</li>
+                    </ul>
+            </ol>
+    </section>
+    <section>
+        <div>
+            <h3 class="main-heading">Services Provided</h3>
+            <table>
                 <tr>
-                    <th>Service</th>
-                    <th>POC</th>
-                    <th>Business Name</th>
+                    <th class="heading">Service</th>
+                    <th class="heading">POC</th>
+                    <th class="heading">Business Name</th>
                 </tr>
                 <tr>
                     <td>Website Build</td>
@@ -67,18 +81,30 @@ Step 2: Create the HTML Structure
                 </tr>
             </table>
         </div><br>
-    </section>
+    </section>  
     <footer>
-        <form action="/submit" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
+       <p>Want to know more? Contact us!!</p>
+           <section >
+                <div id="form">
+                    <form action="/submit" method="POST">
+                        <div class="labels">
+                        <label for="name" class="label">Name:</label>
+                        <input type="text" id="name" name="name">
+                        </div>
+                        <div class="labels">
+                        <label for="email" class="label">Email:</label>
+                        <input type="text" id="email" name="email">
+                        </div>
+                        <div class="labels">
+                        <label for="message" class="label">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                        </div class="labels">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>  
     </footer>
 </body>
 </html>
+
 
